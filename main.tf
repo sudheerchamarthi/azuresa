@@ -65,6 +65,7 @@ resource "azurerm_storage_account" "storage_account" {
     virtual_network_subnet_ids = [
       for s in data.azurerm_subnet.allowed_subnets : s.id
     ]
+    bypass                     = ["Metrics"]
   }
 }
 

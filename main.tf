@@ -38,7 +38,7 @@ locals {
     "default1",
     "default2"
   ]
-  storageaccount_name             = "mystgpvtactst"
+  storageaccount_name             = "g3privatestorage"
   storageaccount_tier             = "Standard"
   storageaccount_replication_type = "LRS"
 

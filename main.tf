@@ -24,6 +24,14 @@ variable "clientsecret" {
   default = {}
 }
 
+variable "location" {
+  default = {}
+}
+
+variable "rgname" {
+  default = {}
+}
+
 locals {
   virtual_network_name = "default"
   allowed_subnets = [

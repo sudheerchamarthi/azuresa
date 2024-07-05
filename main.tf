@@ -7,6 +7,23 @@ provider "azurerm" {
   features {}
 }
 
+
+variable "tenantID" {
+  default = {}
+}
+
+variable "subscriptionid" {
+  default = {}
+}
+
+variable "clientId" {
+  default = {}
+}
+
+variable "clientsecret" {
+  default = {}
+}
+
 locals {
   virtual_network_name = "default"
   allowed_subnets = [
